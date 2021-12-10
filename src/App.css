@@ -1,0 +1,103 @@
+.mainDiv {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+*{
+  color:white;
+}
+
+input {
+  width: 85%;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: black !important;
+  border: 1px solid #dddfe2;
+}
+
+h2{
+  color: black !important;
+
+}
+.card {
+  width: 180px;
+  height: 190px;
+  background-color: #7061fb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cardParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-top: 60px;
+}
+
+.App-link {
+  color: #f5ae15c5;
+}
+
+.hideWarning {
+  opacity: 0;
+}
+
+.showWarning {
+  opacity: 1;
+}
+
+.todoContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+#currentTodoContainer {
+  background: hsla(148, 76%, 38%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsl(353deg 96% 64%) 0%,
+    hsl(352deg 98% 44%) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#17AC5D", endColorstr="#0b3866", GradientType=1 );
+}
+
+#pendingTodoContainer {
+  background: hsla(221, 45%, 73%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(220, 78%, 29%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+}
+
+#completedTodoContainer {
+  background: hsla(132, 79%, 68%, 1);
+
+  background: linear-gradient(
+    90deg,
+    rgb(60, 214, 91) 0%,
+    rgb(90, 180, 48) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(132, 79%, 68%, 1) 0%,
+    hsla(101, 62%, 48%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(132, 79%, 68%, 1) 0%,
+    hsla(101, 62%, 48%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6EEE87", endColorstr="#5FC52E", GradientType=1 );
+}
