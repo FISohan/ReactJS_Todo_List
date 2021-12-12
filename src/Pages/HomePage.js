@@ -150,7 +150,7 @@ export default class HomePage extends Component {
               Log-out
             </div>
           </div>
-          <div className="cardParent">
+          <div className="cardParent" style={{ position: "relative" }}>
             <div className="card">
               <h3>Add project</h3>
               <input
@@ -172,7 +172,7 @@ export default class HomePage extends Component {
                 style={{
                   width: "50%",
                   marginTop: "5px",
-                  color:'black'
+                  color: "black",
                 }}
               />
             </div>
@@ -192,6 +192,47 @@ export default class HomePage extends Component {
                 <h3>{value.projectName}</h3>
               </div>
             ))}
+
+            <div
+              style={{
+                position: "absolute",
+                textAlign: "center",
+                width: "100%",
+                top: "98%",
+              }}
+            >
+              <p
+                style={{
+                  color: "gray",
+                  textAlign: "center",
+                  fontSize: "small",
+                }}
+              >
+                © {new Date().getUTCFullYear()}, by Fahim Ihtesham Sohan.
+                <br />
+                <a
+                  href="mailto: fisohan7@gmail.com"
+                  style={{
+                    color: "gray",
+                    textAlign: "center",
+                    fontSize: "small",
+                  }}
+                >
+                  fisohan7@gmail.com{" "}
+                </a>
+                <br />
+                <a
+                  href="https://www.facebook.com/fisohan.79"
+                  style={{
+                    color: "gray",
+                    textAlign: "center",
+                    fontSize: "small",
+                  }}
+                >
+                  My fake facebook ID{" "}
+                </a>
+              </p>
+            </div>
           </div>
         </>
       );
@@ -228,6 +269,7 @@ export default class HomePage extends Component {
           width: "250px",
           padding: "5px",
           borderRadius: "5px",
+          zIndex:100
         }}
       >
         {this.state.warningMassage}
